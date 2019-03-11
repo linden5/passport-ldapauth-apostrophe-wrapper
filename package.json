@@ -1,0 +1,45 @@
+{
+  "name": "passport-ldapauth-apostrophe-wrapper",
+  "version": "1.0.0",
+  "description": "A wrapper to adapt passport-ldapauth to apostrophe-passport",
+  "keywords": [
+    "passport",
+    "passport-ldapauth",
+    "apostrophe-passport",
+    "wrapper"
+  ],
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/linden5/passport-ldapauth-apostrophe-wrapper.git"
+  },
+  "author": "linden5<linden5@qq.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "mockServer:start": "node node_modules/ldap-server-mock/server.js --conf=../../test/mock/server-config.json --database=../../test/mock/users.json",
+    "lint": "eslint ./",
+    "test": "mocha test/*.spec.js"
+  },
+  "dependencies": {
+    "passport-ldapauth": "^2.1.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-passport-strategy": "^1.0.1",
+    "eslint": "^5.15.1",
+    "ldap-server-mock": "^2.0.0",
+    "lodash.clone": "^4.5.0",
+    "mocha": "^6.0.2",
+    "sinon": "^7.2.7"
+  },
+  "peerDependencies": {
+    "apostrophe-passport": "^2.1.0"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  }
+}

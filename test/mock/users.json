@@ -1,0 +1,6 @@
+[{
+  "dn": "cn=user,dc=test",
+  "cn": "user-login",
+  "attribute1": "value1",
+  "attribute2": "value2"
+}]
