@@ -4,7 +4,7 @@ This is a wrapper strategy based on [passport-ldapauth](https://www.npmjs.com/pa
 It adapts passport-ldapauth to [apostrophe-passport](https://github.com/apostrophecms/apostrophe-passport).
 
 [apostrophe-passport](https://github.com/apostrophecms/apostrophe-passport) is designed to support strategies based on [passport-oauth2](https://github.com/jaredhanson/passport-oauth2).
-In order to user [passport-ldapauth](https://www.npmjs.com/package/passport-ldapauth) in [apostrophe-passport](https://github.com/apostrophecms/apostrophe-passport)
+In order to use [passport-ldapauth](https://www.npmjs.com/package/passport-ldapauth) in [apostrophe-passport](https://github.com/apostrophecms/apostrophe-passport), we should wrap it in a new strategy that looks more like `passport-oauth2` from the outside.
 
 ## Installation
 
@@ -19,8 +19,8 @@ yarn add passport-ldapauth-apostrophe-wrapper
 
 Please refer to [passport-ldapauth](https://github.com/vesse/passport-ldapauth).
 
-This strategy adds an extra configuration option `completeProfile`, to build the user profile required by apostrophe.
-It accepts a function that use the ldap search result as its first argument, and should return the completed user profile.
+This strategy adds an extra configuration option `completeProfile`. The option accepts a function, whose first argument is the ldap search result, and should return the completed user profile.
+
 Reference: [How should I map users on their site to users on my site?](https://github.com/apostrophecms/apostrophe-passport#how-should-i-map-users-on-their-site-to-users-on-my-site)
 
 For more detailed usage, please refer to [apostrophe-passport](https://github.com/apostrophecms/apostrophe-passport).
